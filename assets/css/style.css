@@ -29,16 +29,26 @@ a {
   left: 0;
   width: 100%;
   padding: 1.3rem 10%;
-  background:  rgba(27, 27, 27,  .6);
-  backdrop-filter: blur(50px);
+  background-color: #1b1b1b;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
 }
 
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  z-index: -1;
+}
+
 .logo_nav {
-  width:  200px;
+  width: 180px;
 }
 
 .navbar a {
@@ -48,10 +58,79 @@ a {
   margin-left: 2.5rem;
 }
 
-.icon_menu{
+.navbar a:hover {
+  transition: 0.2s ease-in-out;
+  font-size: 1.2rem;
+  color: #ffcc31;
+}
+
+#check {
+  display: none;
+}
+
+.icon_menu {
+  position: absolute;
+  right: 5%;
   font-size: 2.8rem;
   color: #ffcc31;
   cursor: pointer;
   display: none;
+
 }
 
+/*  BREAKPOINT*/
+@media (max-width: 1180px) {
+  .header {
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 1178px) {
+  .icon_menu{
+    display: inline-flex;
+  }
+
+  #check:checked~.icon_menu #open_icon {
+    display: none;
+  }
+
+  .icon_menu #close_icon{
+    display: none;
+    transition: all 1.ms ease-in-out;
+  }
+
+  #check:checked~.icon_menu #close_icon {
+    display: block;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(27, 27, 27, 0.5);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 .5re, 1rem rgba(27, 27, 27, 0.5);
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar {
+    height: 17.7rem;
+  }
+
+  .navbar a{
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.1rem 0;
+    text-align: center;
+    transform: translateY(-10px);
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar a {
+    transform: translateY(0);
+  }
+
+}
