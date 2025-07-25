@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +7,51 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: #ffffff;
-  color: #003566;
+  min-height: 100vh;
+  background: url("/images/bamir_fondo1.1.jpg") no-repeat;
+  background-color: #1b1b1b;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
   overflow: visible;
-  min-height: 10vh;
 }
 
 a {
   text-decoration: none;
+  color: #ffcc31;
 }
 
+/* header */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  background:  rgba(27, 27, 27,  .6);
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo_nav {
+  width:  200px;
+}
+
+.navbar a {
+  font-size: 1.15rem;
+  color: #ffffff;
+  font-weight: 500;
+  margin-left: 2.5rem;
+}
+
+.icon_menu{
+  font-size: 2.8rem;
+  color: #ffcc31;
+  cursor: pointer;
+  display: none;
+}
 
