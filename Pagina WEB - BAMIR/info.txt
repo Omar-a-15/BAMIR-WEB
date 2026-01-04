@@ -1,0 +1,4 @@
+Colores de la web :
+Amarillo logo BAMIR: #ffcc31
+Gris secundario Logo BAMIR: #1b1b1b
+Blanco: #ffffff
