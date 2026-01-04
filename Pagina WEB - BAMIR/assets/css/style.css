@@ -166,7 +166,7 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.6)),
-    url("/images/IMG_3162.webp") center/cover no-repeat;
+    url("/images/ft-services.webp") center/cover no-repeat;
   z-index: 0;
 }
 .services .container {
@@ -404,4 +404,20 @@ body {
   text-align: center;
   font-size: 0.85rem;
   color: #9ca3af;
+}
+
+/* BOTONES HERO - MOBILE */
+@media (max-width: 768px) {
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start; /* o center si los quieres centrados */
+  }
+
+  .hero-buttons a {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
 }
