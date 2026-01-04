@@ -27,6 +27,10 @@
                 <a href="#">Contacto</a>
             </nav>
 
+            <button class="menu-toggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
             <a href="https://wa.me/50767785974?text=Hola,%20quiero%20cotizar%20un%20servicio%20de%20jardinería"
                 class="btn btn-primary">Cotiza por WhatsApp</a>
         </div>
@@ -37,7 +41,7 @@
         <div class="overlay"></div>
 
         <div class="container hero-content">
-            <h2>BAMIR JARDINERÍA</h2>
+            <h1>BAMIR JARDINERÍA</h1>
             <p class="slogan">Tu jardín, en manos profesionales.</p>
             <p class="hero-text">
                 Instalación de grama, paisajismo, mantenimiento y sistemas de riego
@@ -253,7 +257,6 @@
             </div>
 
             <p class="coverage-text">
-                Brindamos nuestros servicios principalmente en la región de Azuero.
                 <strong>Dependiendo del proyecto, también podemos cubrir cualquier zona del país</strong>,
                 tomando en cuenta la distancia, logística y las medidas necesarias para garantizar un trabajo de
                 calidad.
@@ -288,7 +291,6 @@
                     <img src="/images/grama/gra-1.webp" alt="">
                     <img src="/images/grama/gra-4.webp" alt="">
                     <img src="/images/grama/gra-2.webp" alt="">
-                    <img src="/images/grama/gra-4.webp" alt="">
                     <img src="/images/grama/gra-10.webp" alt="">
 
 
@@ -317,9 +319,11 @@
                 <h4 class="gallery-title">Otros trabajos</h4>
 
                 <div class="gallery-row">
+                    <img src="/images/otros/otr-5.webp" alt="">
+                    <img src="/images/otros/otr-6.webp" alt="">
+                    <img src="/images/otros/otr-7.webp" alt="">
                     <img src="/images/otros/otr-1.webp" alt="">
                     <img src="/images/otros/otr-3.webp" alt="">
-                    <img src="/images/otros/otr-7.webp" alt="">
                     <img src="/images/otros/otr-8.webp" alt="">
                     <img src="/images/otros/otr-2.webp" alt="">
                     <img src="/images/otros/otr-4.webp" alt="">
@@ -333,6 +337,15 @@
         class="whatsapp-float" target="_blank" aria-label="Escríbenos por WhatsApp">
         <img src="/images/whatsapp-icon.png" alt="WhatsApp">
     </a>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
 
 
 </body>
