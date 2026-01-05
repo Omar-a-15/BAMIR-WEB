@@ -260,7 +260,7 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(rgba(27, 27, 27, 0.85), rgba(27, 27, 27, 0.6)),
-    url("/images/ft-services.webp") center/cover no-repeat;
+    url("/images/ft-services-2.webp") center/cover no-repeat;
   z-index: 0;
 }
 .services .container {
