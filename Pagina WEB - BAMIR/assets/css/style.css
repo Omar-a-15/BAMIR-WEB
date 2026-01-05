@@ -443,6 +443,32 @@ body {
 .whatsapp-float img {
   width: 28px;
 }
+
+/* Botón flotante Instagram */
+.instagram-float {
+  position: fixed;
+  bottom: 90px; /* un poco arriba del WhatsApp */
+  right: 20px;
+  width: 56px;
+  height: 56px;
+  background: #E1306C; /* color oficial de Instagram */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+  z-index: 2000;
+  transition: transform 0.3s ease;
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+}
+
+.instagram-float img {
+  width: 28px;
+}
+
 .footer {
   background: #1b1b1b;
   color: #ffffff;
